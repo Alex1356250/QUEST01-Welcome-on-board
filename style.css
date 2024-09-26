@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color:#A306B6;/*couleur principale*/
+    --page-bg:whitesmoke;/*Fond pour page*/
+    --articles-bg:#D9D9D9;/*Fond pour articles*/
+    --police1:"Montserrat", sans-serif; /*Police pour titres h1, h2, h3*/
+    --police2: "Source Sans 3", sans-serif; /*Police pour paragraphe et liens de navigation*/
+}
+
+
+nav {
+    background-color: var(--main-color);
+}
+
+img {
+    width: 100px ;
+    height: 100px ;
+    margin: 10px; 
+    /* A modifier avec une unité en pourcentage */
+}
+
+.menuNav {
+    display: flex;
+    justify-content: space-between;
+    font-family:var(--police2) ;/*à changer dans root*/
+    gap: 10px
+    /* A modifier avec une unité en pourcentage */
+}
+
+a {
+    text-decoration: none;
+    color:var(--page-bg);/*à changer dans root*/
+}
+header {
+    background-color:var(--main-color); /*à changer dans root*/
+    color:var(--page-bg);/*à changer dans root*/
+}
+
+h1 {
+    font-family:var(--police1);/*à changer dans root*/
+}
+
+h2 {
+    color:var(--main-color);/*à changer dans root*/
+    text-align: center;
+    font-family:var(--police1);/*à changer dans root*/
+}
+
+h3 {
+    font-family:var(--police1);/*à changer dans root*/
+}
+
+p {
+    font-family:var(--police2);/*à changer dans root*/
+}
+
+button {
+    font-family:var(--police2);/*à changer dans root*/
+    color:var(--page-bg); /*à changer dans root*/
+    background-color:var(--main-color);/*à changer dans root*/
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 50px;
+
+}
+
+/* 
+.responsive {
+    margin: 0;
+}
+.scalable {
+    margin: 0;
+}
+.inclusive {
+    margin: 0;
+} */
+
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color:var(--articles-bg);/*à changer dans root*/
+    width: 200px;
+    margin: 10px; 
+}
+
+.about {
+    text-align: justify;
+    margin: 1vh;
+}
+
+
+footer {
+    text-align: center;
+    background-color:var(--articles-bg); /*à changer dans root*/
+}
